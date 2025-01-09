@@ -12,4 +12,4 @@ Notice: Choose the test class required and run it:
 
 ◉ TestForgetpassword
 
-### You have to ask about my placeholder <my-password> to test login.
+### You have to ask about my <my-password> to test login.
