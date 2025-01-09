@@ -5,3 +5,4 @@ Notice: Choose the test class required and run it:
 1- TestSignup
 2- TestLogin (this includes choosing a certain category and viewing it)
 3- TestForgetpassword
+### You have to ask about my placeholder <my-password> to test login.
