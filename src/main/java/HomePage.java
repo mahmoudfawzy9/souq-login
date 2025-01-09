@@ -213,10 +213,9 @@ public class HomePage {
 
         driver.manage().timeouts().implicitlyWait(1000, TimeUnit.MILLISECONDS);
 
-        //Working Frame
+        //used for logging data using System.out.println statement
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("cvf-aamation-challenge-iframe"))).isDisplayed();
 
-        System.out.println("+++++" +wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("cvf-aamation-challenge-iframe"))).isDisplayed());
         driver.manage().timeouts().implicitlyWait(1000, TimeUnit.MILLISECONDS);
 
         WebElement iframe = driver.findElement(By.id("cvf-aamation-challenge-iframe"));
