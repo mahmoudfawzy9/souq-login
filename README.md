@@ -14,4 +14,4 @@ Notice: Choose the test class required and run it:
 
 ◉ TestForgetpassword
 
-### You have to ask about my passowrd to test 'TestLogin' class.
+### You have to ask about my passowrd to test 'TestLogin' class till I use password bcrypt.
