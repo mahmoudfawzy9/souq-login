@@ -55,7 +55,7 @@ public class HomePage {
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("a-button-input"))).click();
 
-        driver.findElement(By.id("ap_email")).sendKeys("01006864224");
+        driver.findElement(By.id("ap_email")).sendKeys("<my-number>");
 
         driver.manage().timeouts().implicitlyWait(100, TimeUnit.MILLISECONDS);
 
