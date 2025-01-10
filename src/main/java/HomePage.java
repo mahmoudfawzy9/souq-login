@@ -125,7 +125,7 @@ public class HomePage {
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("a-button-input"))).click();
         // refactored email or phone number
-        enterEmail("01006864224");
+        enterEmail("<my-number>");
 
         driver.manage().timeouts().implicitlyWait(100, TimeUnit.MILLISECONDS);
 
