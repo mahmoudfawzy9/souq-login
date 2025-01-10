@@ -14,4 +14,4 @@ Notice: Choose the test class required and run it:
 
 ◉ TestForgetpassword
 
-### You have to ask about my number, my passowrd to test.
+### You have to ask about my number, my passowrd to test, I removed as a security measure for me.
