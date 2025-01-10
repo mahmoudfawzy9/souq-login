@@ -197,7 +197,7 @@ public class HomePage {
         driver.findElement(By.id("ap_customer_name")).sendKeys("محمود فوزي محمد فهمي");
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("ap_phone_number"))).click();
-        driver.findElement(By.id("ap_phone_number")).sendKeys("01027201640");
+        driver.findElement(By.id("ap_phone_number")).sendKeys("<my-number>");
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("ap_password"))).click();
         driver.findElement(By.id("ap_password")).sendKeys("striker@1234");
