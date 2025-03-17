@@ -32,32 +32,42 @@ public class HomePage {
     public void login(){
         // Wait for 1 second
         try {
-            Thread.sleep(1000);  // Sleep for 1000 milliseconds (1 second)
+            Thread.sleep(2000);  // Sleep for 1000 milliseconds (1 second)
         } catch (InterruptedException e) {
             e.printStackTrace();  // Handle the interrupted exception
         }
 
-        Wait<WebDriver> wait = new FluentWait<>(driver).withTimeout(Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("nav-icon")));
+         Wait<WebDriver> wait = new FluentWait<>(driver).withTimeout(Duration.ofSeconds(10));
+//        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("span.nav-line-2")));
         // Create an instance of Actions
         Actions actions = new Actions(driver);
 
         // Hover over the web element
-        actions.moveToElement(driver.findElement(By.className("nav-icon"))).perform();
+        actions.moveToElement(driver.findElement(By.cssSelector("span.nav-line-2"))).perform();
+
+        try {
+            Thread.sleep(2000);  // Sleep for 1000 milliseconds (1 second)
+        } catch (InterruptedException e) {
+            e.printStackTrace();  // Handle the interrupted exception
+        }
 
         // Wait for the span to be visible
-        WebElement loginSpan = wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("nav-a")));
+        WebElement loginSpan = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("span.nav-line-2")));
 
         // Click the span
         loginSpan.click();
 
+        try {
+            Thread.sleep(2000);  // Sleep for 1000 milliseconds (1 second)
+        } catch (InterruptedException e) {
+            e.printStackTrace();  // Handle the interrupted exception
+        }
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@aria-label='الرجاء تسجيل الدخول لرؤية العناوين الخاصة بك']"))).click();
+
         driver.manage().timeouts().implicitlyWait(100, TimeUnit.MILLISECONDS);
 
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("a-button-input"))).click();
-
-        driver.findElement(By.id("ap_email")).sendKeys("<my-number>");
-
-        driver.manage().timeouts().implicitlyWait(100, TimeUnit.MILLISECONDS);
+        // refactored email or phone number
+        enterEmail(<my-number>);
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("a-button-input"))).click();
 
