@@ -1,5 +1,5 @@
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -18,7 +18,7 @@ public class TestSignup {
         homePage.signUpFailed();
     }
 
-    @AfterClass
+    @AfterTest
     public void tearDown() {
         homePage.quitDriver();
     }
