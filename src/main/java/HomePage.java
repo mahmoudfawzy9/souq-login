@@ -345,4 +345,7 @@ public class HomePage {
         buttonSix.click();
     }
 
+    public void quitDriver() {
+        driver.quit();
+    }
 }
