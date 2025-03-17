@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 public class TestLogin {
 
     private WebDriver driver;
-    HomePage homePage;
+    private HomePage homePage;
 
     @BeforeTest
     public void setup() {
